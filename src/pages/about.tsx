@@ -38,7 +38,7 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-32 md:pb-20">
+    <div className="min-h-screen pt-16 pb-28 md:pb-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div {...fadeIn} className="text-center mb-16">

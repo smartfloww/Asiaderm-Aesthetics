@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] md:min-h-screen flex items-center pt-20 md:pt-0">
+      <section className="relative min-h-[75vh] md:min-h-screen flex items-start md:items-center pt-0 md:pt-0">
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <img
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-8 md:py-20 grid md:grid-cols-2 gap-12 items-start md:items-center">
           <motion.div {...fadeIn}>
             <div className="w-16 h-px bg-primary mb-6" />
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
@@ -98,6 +98,16 @@ export default function Home() {
               >
                 View All Services
               </Link>
+            </div>
+
+            <div className="mt-8 md:hidden">
+              <div className="overflow-hidden rounded-[2rem] border border-muted/20 shadow-2xl">
+                <img
+                  src={asset('assets/face.png')}
+                  alt="Aesthetic treatment preview"
+                  className="w-full h-56 object-cover"
+                />
+              </div>
             </div>
           </motion.div>
 
