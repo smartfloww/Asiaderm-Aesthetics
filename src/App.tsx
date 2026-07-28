@@ -14,6 +14,14 @@ import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
 
+function getRouterBase() {
+  if (typeof window === 'undefined') {
+    return import.meta.env.BASE_URL.replace(/\/$/, '');
+  }
+
+  return new URL(import.meta.env.BASE_URL, window.location.href).pathname.replace(/\/$/, '');
+}
+
 function Router() {
   return (
     <>
@@ -38,7 +46,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+        <WouterRouter base={getRouterBase()}>
           <Router />
         </WouterRouter>
         <Toaster />

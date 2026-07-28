@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'wouter';
 import { useEffect, useState } from 'react';
+import { asset } from '@/lib/asset';
 
 export function DesktopNav() {
   const [location] = useLocation();
