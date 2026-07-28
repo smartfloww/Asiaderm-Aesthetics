@@ -309,7 +309,7 @@ export default function Services() {
         <motion.div {...fadeIn} className="text-center mt-12">
           <p className="text-lg mb-6">Ready to book your treatment?</p>
           <a
-            href="https://www.facebook.com/asiaderm.aesthetics"
+            href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"

@@ -28,8 +28,8 @@ export default function Gallery() {
       category: 'Skin Rejuvenation',
       items: [
         {
-          type: 'single',
-          image: asset('assets/face-cleaning-before-after.png'),
+          beforeImage: asset('assets/Skin Rejuvenation_before.png'),
+          afterImage: asset('assets/Skin Rejuvenation_after.png'),
         },
       ],
     },
@@ -150,7 +150,7 @@ export default function Gallery() {
             Interested in achieving similar results? Schedule a consultation.
           </p>
           <a
-            href="https://www.facebook.com/asiaderm.aesthetics"
+            href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"

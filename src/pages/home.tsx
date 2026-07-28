@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Award, Heart, Shield, Clock, Phone } from 'lucide-react';
 import { Link } from 'wouter';
 import { asset } from '@/lib/asset';
+import { BeforeAfterSlider } from '@/components/ui/before-after-slider';
 
 export default function Home() {
   const fadeIn = {
@@ -16,19 +17,19 @@ export default function Home() {
       title: 'Korean Threads',
       description: 'Non-surgical face lifting with precision threadwork',
       treatments: ['Hiko Nose Lift', 'Foxy Eyes', 'Face Lift Threads'],
-      image: asset('assets/face.png'),
+      image: asset('assets/korean_thread.png'),
     },
     {
       title: 'Advanced Laser',
       description: 'PICO and CO2 fractional laser for skin renewal',
       treatments: ['Tattoo Removal', 'Skin Resurfacing', 'Acne Scars'],
-      image: asset('assets/face-acne.jpg'),
+      image: asset('assets/advanced_laser.png'),
     },
     {
       title: 'Skin Boosters',
       description: 'Medical-grade rejuvenation with premium serums',
       treatments: ['Rejuran Healer', 'Profhilo', 'ASCE Exosomes'],
-      image: asset('assets/face-cleaning-before-after.png'),
+      image: asset('assets/skin_booster.png'),
     },
   ];
 
@@ -82,7 +83,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://www.facebook.com/asiaderm.aesthetics"
+                href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
@@ -229,55 +230,57 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid gap-8 md:grid-cols-2">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="aspect-square overflow-hidden bg-card"
+              transition={{ duration: 0.6 }}
+              className="rounded-[2rem] bg-card p-6 shadow-lg"
             >
-              <img
-                src={asset('assets/face-acne-1-before.png')}
-                alt="Acne treatment results"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              <BeforeAfterSlider
+                beforeImage={asset('assets/face-acne-1-before.png')}
+                afterImage={asset('assets/face-acne-1-after.png')}
+                beforeLabel="Before"
+                afterLabel="After"
               />
+              <div className="mt-5">
+                <h3 className="text-2xl font-semibold">Acne Renewal</h3>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Real before-and-after transformation from our laser resurfacing protocol.
+                </p>
+              </div>
             </motion.div>
+
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="aspect-square overflow-hidden bg-card"
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="rounded-[2rem] bg-card p-6 shadow-lg"
             >
-              <img
-                src={asset('assets/face-cleaning-before-after.png')}
-                alt="Skin rejuvenation"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              <BeforeAfterSlider
+                beforeImage={asset('assets/face-acne-2-before.png')}
+                afterImage={asset('assets/face-acne-2_after.png')}
+                beforeLabel="Before"
+                afterLabel="After"
               />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="aspect-square overflow-hidden bg-card"
-            >
-              <img
-                src={asset('assets/tatto_before.png')}
-                alt="Tattoo removal"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-              />
+              <div className="mt-5">
+                <h3 className="text-2xl font-semibold">Skin Booster Glow</h3>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Smooth, hydrated results from our signature skin booster treatments.
+                </p>
+              </div>
             </motion.div>
           </div>
 
           <motion.div {...fadeIn} className="text-center mt-12">
             <Link
               href="/gallery"
-              className="inline-block px-8 py-3 border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
               data-testid="link-view-gallery"
             >
-              View Before & After Gallery
+              View More Before & After
             </Link>
           </motion.div>
         </div>
@@ -295,7 +298,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.facebook.com/asiaderm.aesthetics"
+                href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
@@ -328,7 +331,7 @@ export default function Home() {
                 <p className="flex items-start gap-3">
                   <span className="text-primary mt-1">●</span>
                   <span>
-                    <strong className="text-foreground">Address:</strong> Lot 9 Blk 4, Golden Valley Subdivision Commercial Center, JP Rizal, Marikina City
+                    <strong className="text-foreground">Address:</strong> Lot 9 Blk 4 Golden Valley Subdivision Commercial Center Barangay Malanday Marikina City 1805, Marikina City, Philippines, 1805
                   </span>
                 </p>
                 <p className="flex items-start gap-3">

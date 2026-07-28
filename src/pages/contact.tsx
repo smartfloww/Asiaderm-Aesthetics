@@ -32,9 +32,7 @@ export default function Contact() {
             <MapPin className="w-10 h-10 text-primary mb-4" />
             <h2 className="font-serif text-xl font-semibold mb-3">Visit Us</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-2">
-              Lot 9 Blk 4, Golden Valley Subdivision Commercial Center
-              <br />
-              JP Rizal, Marikina City
+              Lot 9 Blk 4 Golden Valley Subdivision Commercial Center Barangay Malanday Marikina City 1805, Marikina City, Philippines, 1805
             </p>
             <p className="text-xs italic text-muted-foreground">
               Beside South Supermarket, Lamuan
@@ -89,7 +87,7 @@ export default function Contact() {
             Message us on Facebook Messenger for the fastest response. Our team will reply within minutes during clinic hours.
           </p>
           <a
-            href="https://www.facebook.com/asiaderm.aesthetics"
+            href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-10 py-4 bg-primary text-primary-foreground font-medium text-lg hover:bg-primary/90 transition-colors"
@@ -107,7 +105,7 @@ export default function Contact() {
           </h2>
           <div className="aspect-video bg-muted overflow-hidden border border-border">
             <iframe
-              src="https://www.google.com/maps?q=Lot+9+Blk+4+Golden+Valley+Subdivision+Commercial+Center+JP+Rizal+Marikina+City&output=embed"
+              src="https://www.google.com/maps?q=Lot+9+Blk+4+Golden+Valley+Subdivision+Commercial+Center+Barangay+Malanday+Marikina+City+1805+Philippines&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -117,7 +115,7 @@ export default function Contact() {
             />
           </div>
           <p className="text-center text-sm text-muted-foreground mt-4 italic">
-            Beside South Supermarket, JP Rizal, Lamuan, Marikina City
+            Beside South Supermarket, Lamuan, Marikina City
           </p>
         </motion.div>
 

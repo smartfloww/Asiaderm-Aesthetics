@@ -118,9 +118,7 @@ export default function About() {
               <div className="border-l-2 border-primary pl-6">
                 <h3 className="font-serif text-xl font-semibold mb-2">Address</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Lot 9 Blk 4, Golden Valley Subdivision Commercial Center
-                  <br />
-                  JP Rizal, Marikina City
+                  Lot 9 Blk 4 Golden Valley Subdivision Commercial Center Barangay Malanday Marikina City 1805, Marikina City, Philippines, 1805
                 </p>
               </div>
 
@@ -185,7 +183,7 @@ export default function About() {
             Ready to experience doctor-led aesthetics? Book your consultation today.
           </p>
           <a
-            href="https://www.facebook.com/asiaderm.aesthetics"
+            href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"

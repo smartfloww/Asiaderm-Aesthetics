@@ -56,7 +56,7 @@ export function DesktopNav() {
         </div>
 
         <a
-          href="https://www.facebook.com/asiaderm.aesthetics"
+          href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-2 border border-primary text-primary text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"

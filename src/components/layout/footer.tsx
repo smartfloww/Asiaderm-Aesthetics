@@ -25,7 +25,7 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
                 <p>
-                  Lot 9 Blk 4, Golden Valley Subdivision Commercial Center, JP Rizal, Marikina City
+                  Lot 9 Blk 4 Golden Valley Subdivision Commercial Center Barangay Malanday Marikina City 1805, Marikina City, Philippines, 1805
                   <br />
                   <span className="text-xs italic">Beside South Supermarket, Lamuan</span>
                 </p>
@@ -47,7 +47,7 @@ export function Footer() {
           <div>
             <h3 className="font-serif text-lg font-semibold mb-4">Connect</h3>
             <a
-              href="https://www.facebook.com/asiaderm.aesthetics"
+              href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -58,7 +58,7 @@ export function Footer() {
             </a>
             <div className="mt-6">
               <a
-                href="https://www.facebook.com/asiaderm.aesthetics"
+                href="https://m.me/AsiadermCosmeticAndMedicalAestheticCenter"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-2 border border-primary text-primary text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
