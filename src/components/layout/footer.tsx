@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, MessageCircleMore } from 'lucide-react';
+import { asset } from '@/lib/asset';
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="/assets/logo_2.png"
+              src={asset('assets/logo_2.png')}
               alt="Asiaderm Aesthetics"
               className="h-14 w-auto object-contain mb-4"
             />

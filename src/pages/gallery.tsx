@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { BeforeAfterSlider } from '@/components/ui/before-after-slider';
+import { asset } from '@/lib/asset';
 
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -10,16 +11,16 @@ export default function Gallery() {
       category: 'Acne Treatment',
       items: [
         {
-          beforeImage: '/assets/face-acne-1-before.png',
-          afterImage: '/assets/face-acne-1-after.png',
+          beforeImage: asset('assets/face-acne-1-before.png'),
+          afterImage: asset('assets/face-acne-1-after.png'),
         },
         {
-          beforeImage: '/assets/face-acne-2-before.png',
-          afterImage: '/assets/face-acne-2_after.png',
+          beforeImage: asset('assets/face-acne-2-before.png'),
+          afterImage: asset('assets/face-acne-2_after.png'),
         },
         {
-          beforeImage: '/assets/face-acne-3-before.png',
-          afterImage: '/assets/face-acne-3-after.png',
+          beforeImage: asset('assets/face-acne-3-before.png'),
+          afterImage: asset('assets/face-acne-3-after.png'),
         },
       ],
     },
@@ -28,7 +29,7 @@ export default function Gallery() {
       items: [
         {
           type: 'single',
-          image: '/assets/face-cleaning-before-after.png',
+          image: asset('assets/face-cleaning-before-after.png'),
         },
       ],
     },
@@ -36,8 +37,8 @@ export default function Gallery() {
       category: 'Tattoo Removal',
       items: [
         {
-          beforeImage: '/assets/tatto_before.png',
-          afterImage: '/assets/tatto-after.png',
+          beforeImage: asset('assets/tatto_before.png'),
+          afterImage: asset('assets/tatto-after.png'),
         },
       ],
     },

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Award, Shield, Heart, Users } from 'lucide-react';
+import { asset } from '@/lib/asset';
 
 export default function About() {
   const fadeIn = {
@@ -70,7 +71,7 @@ export default function About() {
 
             <div className="aspect-square overflow-hidden bg-muted">
               <img
-                src="/assets/face.png"
+                src={asset('assets/face.png')}
                 alt="Asiaderm clinical care"
                 className="w-full h-full object-cover"
               />

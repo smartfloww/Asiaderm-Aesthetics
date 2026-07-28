@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Award, Heart, Shield, Clock, Phone } from 'lucide-react';
 import { Link } from 'wouter';
+import { asset } from '@/lib/asset';
 
 export default function Home() {
   const fadeIn = {
@@ -15,19 +16,19 @@ export default function Home() {
       title: 'Korean Threads',
       description: 'Non-surgical face lifting with precision threadwork',
       treatments: ['Hiko Nose Lift', 'Foxy Eyes', 'Face Lift Threads'],
-      image: '/assets/face.png',
+      image: asset('assets/face.png'),
     },
     {
       title: 'Advanced Laser',
       description: 'PICO and CO2 fractional laser for skin renewal',
       treatments: ['Tattoo Removal', 'Skin Resurfacing', 'Acne Scars'],
-      image: '/assets/face-acne.jpg',
+      image: asset('assets/face-acne.jpg'),
     },
     {
       title: 'Skin Boosters',
       description: 'Medical-grade rejuvenation with premium serums',
       treatments: ['Rejuran Healer', 'Profhilo', 'ASCE Exosomes'],
-      image: '/assets/face-cleaning-before-after.png',
+      image: asset('assets/face-cleaning-before-after.png'),
     },
   ];
 
@@ -61,7 +62,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <img
-              src="/assets/face.png"
+              src={asset('assets/face.png')}
               alt="Clinical aesthetics"
               className="absolute inset-0 w-full h-full object-cover opacity-15"
             />
@@ -107,7 +108,7 @@ export default function Home() {
             className="hidden md:block"
           >
             <img
-              src="/assets/face.png"
+              src={asset('assets/face.png')}
               alt="Professional aesthetic care"
               className="w-full h-auto shadow-2xl"
             />
@@ -227,7 +228,7 @@ export default function Home() {
               className="aspect-square overflow-hidden bg-card"
             >
               <img
-                src="/assets/face-acne-1-before.png"
+                src={asset('assets/face-acne-1-before.png')}
                 alt="Acne treatment results"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -240,7 +241,7 @@ export default function Home() {
               className="aspect-square overflow-hidden bg-card"
             >
               <img
-                src="/assets/face-cleaning-before-after.png"
+                src={asset('assets/face-cleaning-before-after.png')}
                 alt="Skin rejuvenation"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -253,7 +254,7 @@ export default function Home() {
               className="aspect-square overflow-hidden bg-card"
             >
               <img
-                src="/assets/tatto_before.png"
+                src={asset('assets/tatto_before.png')}
                 alt="Tattoo removal"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />

@@ -30,7 +30,7 @@ export function DesktopNav() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center" data-testid="link-home-logo">
           <img
-            src="/assets/logo_2.png"
+            src={asset('assets/logo_2.png')}
             alt="Asiaderm Aesthetics"
             className="h-12 w-auto object-contain"
           />
